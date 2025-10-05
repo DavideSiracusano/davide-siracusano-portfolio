@@ -38,7 +38,7 @@ export default function Home() {
           <p className="animate-gradient  rounded-lg p-6 shadow-lg text-center text-lg  dark:text-gray-300 mb-12">
             Ciao! Sono{" "}
             <strong className="text-gray-900 dark:text-white">Davide</strong>,
-            sviluppatore front-end appassionato di web e nuove tecnologie...
+            sviluppatore front-end appassionato di web e nuove tecnologie!
           </p>
         </div>
 
