@@ -32,7 +32,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="text-center py-6 mt-auto bg-[#8b0000] text-white">
+    <footer className="text-center py-6 mt-auto animate-gradient text-white">
       <p className="mb-4">© Davide Siracusano 2025</p>
       <div className="font-medium my-4">I miei contatti:</div>
 
