@@ -101,7 +101,7 @@ export default function Home() {
     >
       <div className="max-w-4xl mx-auto w-full">
         <div className="flex justify-center items-center mb-8 font-mono">
-          <h1 className="flex items-center justify-center sm:text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="flex items-center justify-center sm:text-2xl md:text-3xl lg:text-4xl mx-auto">
             <span className="html-tag shrink-0">&lt;h1&gt;</span>
             <span className="code-content code-animation mx-2">
               Benvenuto sulla mia pagina! 👋🏻
