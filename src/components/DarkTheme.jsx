@@ -10,20 +10,33 @@ export default function DarkTheme() {
     // Controlla tema salvato
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
-      setIsDark(savedTheme === "dark");
-      document.body.className = savedTheme;
-      if (savedTheme === "dark") {
-        document.documentElement.classList.add("dark");
+      const dark = savedTheme === "dark";
+      setIsDark(dark);
+      // Mantieni altre classi: aggiungi/rimuovi solo `dark`/`light` su body per globals.css
+      if (dark) {
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
+      } else {
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
       }
+      // Tailwind usa la classe `dark` su html
+      if (dark) document.documentElement.classList.add("dark");
+      else document.documentElement.classList.remove("dark");
     } else {
       // Preferenza sistema
       const prefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
       setIsDark(prefersDark);
-      document.body.className = prefersDark ? "dark" : "light";
       if (prefersDark) {
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
         document.documentElement.classList.add("dark");
+      } else {
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
+        document.documentElement.classList.remove("dark");
       }
     }
   }, []);
@@ -33,12 +46,14 @@ export default function DarkTheme() {
     setIsDark(!isDark);
 
     // Applica su body (per CSS custom)
-    document.body.className = newTheme;
-
-    // Applica su html (per Tailwind dark:*)
+    // Imposta body 'dark' o 'light' (senza sovrascrivere altre classi) e html.dark per Tailwind
     if (newTheme === "dark") {
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
       document.documentElement.classList.add("dark");
     } else {
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
       document.documentElement.classList.remove("dark");
     }
 

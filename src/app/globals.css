@@ -25,7 +25,7 @@ body.dark {
   animation: color-change-2x 2s infinite alternate linear;
 }
 
-/* Animazione personalizzata */
+/* Animazione personalizzata per cambiare colore */
 @keyframes color-change-2x {
   0% {
     background: rgb(141, 12, 141);
@@ -33,4 +33,40 @@ body.dark {
   100% {
     background: #8b0000;
   }
+}
+
+/* steps per simulare la digitazione contando i caratteri */
+.code-animation {
+  border-right: 2px solid #4f46e5;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Animazione personalizzata per simulare la digitazione */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #4f46e5;
+  }
+}
+
+.html-tag {
+  color: #6366f1;
+}
+
+.code-content {
+  color: #4f46e5;
 }
