@@ -40,7 +40,14 @@ body.dark {
   border-right: 2px solid #4f46e5;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 100%;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@media (max-width: 640px) {
+  .code-animation {
+    animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
 }
 
 /* Animazione personalizzata per simulare la digitazione */

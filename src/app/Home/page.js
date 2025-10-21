@@ -97,32 +97,32 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
-      className="min-h-screen pt-24 pb-16 px-4 flex flex-col items-center justify-center"
+      className="min-h-screen pt-16 sm:pt-24 pb-12 sm:pb-16 px-3 sm:px-4 flex flex-col items-center justify-center"
     >
       <div className="max-w-4xl mx-auto w-full">
-        <div className="text-center mb-8 font-mono">
-          <h1 className="inline-flex text-2xl">
-            <span className="html-tag">&lt;h1&gt;</span>
-            <span className="code-content code-animation px-4">
+        <div className="flex justify-center items-center mb-8 font-mono w-full">
+          <h1 className="flex items-center justify-center sm:text-2xl md:text-3xl lg:text-4xl">
+            <span className="html-tag shrink-0">&lt;h1&gt;</span>
+            <span className="code-content code-animation mx-2">
               Benvenuto sulla mia pagina! 👋🏻
             </span>
-            <span className="html-tag">&lt;/h1&gt;</span>
+            <span className="html-tag shrink-0">&lt;/h1&gt;</span>
           </h1>
         </div>
 
         <div className="mx-auto max-w-2xl">
-          <p className="animate-gradient rounded-lg p-6 shadow-lg text-center text-lg  mb-12 text-white">
+          <p className="animate-gradient rounded-lg p-4 sm:p-6 shadow-lg text-center text-base sm:text-lg mb-8 sm:mb-12 text-white">
             Ciao! Sono <strong className="text-white">Davide</strong>,
             sviluppatore front-end appassionato di web e nuove tecnologie!
           </p>
         </div>
 
         {/* IN SINTESI */}
-        <section className="rounded-lg p-6 shadow-lg text-center text-lg mb-12 bg-gradient-to-br from-indigo-600 to-purple-700 dark:from-indigo-900 dark:to-purple-950">
-          <h2 className="text-xl font-semibold mb-2 flex items-center justify-center text-white">
+        <section className="rounded-lg p-4 sm:p-6 shadow-lg text-center text-base sm:text-lg mb-8 sm:mb-12 bg-gradient-to-br from-indigo-600 to-purple-700 dark:from-indigo-900 dark:to-purple-950">
+          <h2 className="text-lg sm:text-xl font-semibold mb-2 flex items-center justify-center text-white">
             <span className="mr-2">In sintesi:</span>
           </h2>
-          <p className="text-gray-100">
+          <p className="text-gray-100 leading-relaxed">
             Mi piace trasformare idee in esperienze digitali intuitive, curando
             ogni dettaglio del codice e del design. Credo nella collaborazione,
             nella chiarezza e nell&apos;accessibilità.
@@ -130,9 +130,11 @@ export default function Home() {
         </section>
 
         {/* COMPETENZE */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-center mb-6">Competenze</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <section className="mb-8 sm:mb-12">
+          <h2 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">
+            Competenze
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {/* Front-End */}
             <div className="bg-gradient-to-br from-indigo-100 to-indigo-200 dark:from-indigo-900 dark:to-indigo-800 p-4 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
@@ -188,10 +190,10 @@ export default function Home() {
         </section>
 
         {/*technologies*/}
-        <h4 className="text-2xl font-semibold text-center mb-8">
+        <h4 className="text-xl sm:text-2xl font-semibold text-center mb-6 sm:mb-8">
           Tecnologie con cui lavoro:
         </h4>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {technologies.map((tech, index) => (
             <motion.div
               key={tech.alt}
