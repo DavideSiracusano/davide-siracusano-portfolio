@@ -107,7 +107,7 @@ export default function Home() {
           >
             <span className="html-tag shrink-0 mb-1 sm:mb-0">&lt;h1&gt;</span>
             <span className="code-content code-animation mx-0 sm:mx-4">
-              Benvenuto sulla mia pagina! 👋🏻
+              Benvenuto!👋🏻
             </span>
             <span className="html-tag shrink-0 mt-1 sm:mt-0">&lt;/h1&gt;</span>
           </h1>
