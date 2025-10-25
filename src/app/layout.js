@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} font-montserrat antialiased bg-[rgb(241,240,240)] dark:bg-[rgb(29,26,26)] text-black dark:text-white transition-all duration-300 ease-in-out flex flex-col min-h-screen`}
       >
-        <DarkTheme />
         <Header />
 
         <main className="flex-1">{children}</main>

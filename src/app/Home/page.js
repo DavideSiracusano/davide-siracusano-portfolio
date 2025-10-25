@@ -113,23 +113,37 @@ export default function Home() {
 
         {/* Hero Section */}
         <div className="mx-auto max-w-2xl mb-16 sm:mb-20">
-          <div className="animate-gradient dark:animate-gradient rounded-lg p-6 sm:p-8 shadow-lg text-center mb-6">
-            <p className="text-white text-lg sm:text-xl mb-4">
-              Ciao! Sono{" "}
-              <strong className="text-white">Davide Siracusano</strong>
-            </p>
+          <div className="hero-section rounded-lg p-7 sm:p-8 shadow-lg text-center mb-6">
+            <div className="flex">
+              <p className="text-white text-lg sm:text-xl mb-4">
+                Ciao! Sono{" "}
+                <strong className="text-white">Davide Siracusano</strong>
+              </p>
+            </div>
             <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6">
               Front-End Developer
             </h2>
             <Image
               src={imageDavide}
               alt="Davide Siracusano"
-              className="w-32 h-32 rounded-full mx-auto mb-6"
+              className="w-32 h-34 rounded-full mx-auto mb-6 "
             />
+
+            <h4 className="text-white text-lg sm:text-xl mb-4">
+              {`Sono un appassionato di progettazione web e
+              sviluppo di interfacce moderne e accessibili. Dopo un percorso
+              formativo su Start2Impact, ho maturato esperienza pratica nella
+              realizzazione di applicazioni complete con React.js, Next.js TypeScript e
+              JavaScript, curando ogni dettaglio di design e usabilità. Mi piace
+              creare soluzioni digitali che uniscono estetica, funzionalità e
+              semplicità, con l’obiettivo di offrire esperienze fluide e
+              piacevoli a ogni utente.`}
+            </h4>
+
             <motion.a
               href="/Siracusano Davide CV.pdf"
               download="Siracusano Davide CV.pdf"
-              className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors duration-200"
+              className="animate-gradient inline-flex items-center px-6 py-3  text-white font-medium rounded-lg transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -280,7 +294,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="max-w-lg mx-auto bg-white/10 backdrop-blur-sm dark:bg-gray-800/50 rounded-lg shadow-xl p-8 hover:shadow-2xl transition-all duration-300"
+            className="max-w-lg mx-auto animate-gradient rounded-lg shadow-xl p-8 hover:shadow-2xl transition-all duration-300"
           >
             <form
               action="https://formspree.io/f/myzbgoey"
@@ -298,6 +312,7 @@ export default function Home() {
                   type="text"
                   id="name"
                   name="name"
+                  placeholder="Inserisci il tuo nome"
                   required
                   className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500"
                 />
@@ -313,6 +328,7 @@ export default function Home() {
                   type="email"
                   id="email"
                   name="email"
+                  placeholder="Inserisci la tua email"
                   required
                   className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500"
                 />
@@ -327,6 +343,7 @@ export default function Home() {
                 <textarea
                   id="message"
                   name="message"
+                  placeholder="Es. ciao, Davide! mi piace tantissimo il tuo sito web! Mi piacerebbe proporti un'offerta lavorativa davvero spicy!"
                   rows={4}
                   required
                   className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500"

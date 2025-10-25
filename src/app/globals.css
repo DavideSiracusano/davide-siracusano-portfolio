@@ -69,6 +69,18 @@ body.dark .skill-card-tools {
   );
 }
 
+.hero-section {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+body.dark .hero-section {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 27, 75, 0.95),
+    rgba(67, 26, 107, 0.95)
+  );
+}
+
 /* Animazione gradiente per navbar, footer e link progetti */
 .animate-gradient {
   animation: color-change-2x 2s infinite alternate linear;
