@@ -6,7 +6,7 @@
 
 Ciao! Sono Davide Siracusano, un Front-End Developer appassionato di sviluppo web e UI/UX design. Mi piace trasformare idee in esperienze digitali intuitive, curando ogni dettaglio del codice e del design. Il mio approccio si basa su tre pilastri fondamentali: collaborazione, chiarezza e accessibilità.
 
-## �️ Tecnologie Utilizzate
+## ⚛️ Tecnologie Utilizzate
 
 - **Next.js** - Framework React per applicazioni web moderne e performanti
 - **Tailwind CSS** - Per uno styling efficiente e un design system coerente
@@ -28,6 +28,8 @@ Ciao! Sono Davide Siracusano, un Front-End Developer appassionato di sviluppo we
   - 🛠️ **Projects**: Showcase dei progetti realizzati
   - 📊 **Skills**: Competenze tecniche con indicatori di livello
   - 📬 **Contatti**: Form per collaborazioni e opportunità
+ 
+## Link: https://davide-siracusano-portfolio.vercel.app/
 
 ## 💻 Sviluppo Locale
 
@@ -52,13 +54,13 @@ Il portfolio è completamente responsive e ottimizzato per:
 
 ## 📫 Contatti
 
-- 📧 Email: [davidesiracusano1995@gmail.com]
-- 💼 LinkedIn: [Davide Siracusano]
-- 🐱 GitHub: [@DavideSiracusano]
+- 📧 Email: davide.siracusano94@libero.it
+- 💼 LinkedIn: https://www.linkedin.com/in/davide-siracusano-804989221/
+- 🐱 GitHub: https://github.com/DavideSiracusano
 
 ## 📄 Licenza
 
-MIT © 2023 Davide Siracusano
+© 2025 Davide Siracusano
 
 ---
 
