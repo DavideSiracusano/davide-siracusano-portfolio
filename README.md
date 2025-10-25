@@ -60,7 +60,7 @@ Il portfolio è completamente responsive e ottimizzato per:
 
 ## 📄 Licenza
 
-MIT © 2023 Davide Siracusano
+© 2025 Davide Siracusano
 
 ---
 
