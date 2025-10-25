@@ -154,10 +154,10 @@ export default function Home() {
 
         {/* IN SINTESI */}
         <section className="section-sintesi rounded-lg p-4 sm:p-6 shadow-lg text-center text-base sm:text-lg mb-8 sm:mb-12">
-          <h2 className="text-lg sm:text-xl font-semibold mb-2 flex items-center justify-center text-gray-900 dark:text-white">
+          <h2 className="text-lg sm:text-xl font-semibold mb-2 flex items-center justify-center text-white dark:text-white">
             <span className="mr-2">In sintesi:</span>
           </h2>
-          <p className="text-gray-900 dark:text-gray-100 leading-relaxed">
+          <p className="text-white leading-relaxed">
             Mi piace trasformare idee in esperienze digitali intuitive, curando
             ogni dettaglio del codice e del design. Credo nella collaborazione,
             nella chiarezza e nell&apos;accessibilità.
@@ -304,7 +304,7 @@ export default function Home() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  className="block text-sm font-medium text-white mb-1"
                 >
                   Nome
                 </label>
@@ -320,7 +320,7 @@ export default function Home() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium dark:text-gray-300 mb-1"
+                  className="block text-sm font-medium text-white mb-1"
                 >
                   Email
                 </label>
@@ -336,7 +336,7 @@ export default function Home() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium dark:text-gray-300 mb-1"
+                  className="block text-sm font-medium text-white mb-1"
                 >
                   Messaggio
                 </label>
