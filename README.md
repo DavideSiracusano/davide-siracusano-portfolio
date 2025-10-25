@@ -54,9 +54,9 @@ Il portfolio è completamente responsive e ottimizzato per:
 
 ## 📫 Contatti
 
-- 📧 Email: [davidesiracusano1995@gmail.com]
-- 💼 LinkedIn: [Davide Siracusano]
-- 🐱 GitHub: [@DavideSiracusano]
+- 📧 Email: davide.siracusano94@libero.it
+- 💼 LinkedIn: https://www.linkedin.com/in/davide-siracusano-804989221/
+- 🐱 GitHub: https://github.com/DavideSiracusano
 
 ## 📄 Licenza
 
