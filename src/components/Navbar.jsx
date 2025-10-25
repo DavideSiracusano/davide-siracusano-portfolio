@@ -1,10 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import imageDavide from "../app/imgs/imgdavide.png";
 import DarkTheme from "./DarkTheme";
 
 export default function Header() {
@@ -26,21 +24,9 @@ export default function Header() {
 
   return (
     <nav className="animate-gradient p-4 shadow-md fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
-          <Image
-            src={imageDavide}
-            alt="Davide Siracusano"
-            width={40}
-            height={40}
-            className="rounded-full"
-            priority
-          />
-        </Link>
-
+      <div className="max-w-7xl mx-auto ">
         {/* Desktop menu */}
-        <ul className="hidden md:flex md:gap-6 md:items-center">
+        <ul className="hidden md:flex md:gap-6 md:justify-end lg:flex lg:justify-end">
           {links.map((link) => (
             <li key={link.name}>
               <Link
@@ -59,7 +45,7 @@ export default function Header() {
         </ul>
 
         {/* Mobile hamburger + DarkTheme */}
-        <div className="md:hidden flex items-center gap-3">
+        <div className="md:hidden lg:hidden flex justify-end gap-3">
           <DarkTheme />
           <input
             id="my-drawer"

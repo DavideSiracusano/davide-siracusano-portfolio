@@ -9,6 +9,8 @@ import htmlImg from "../imgs/HTML5_logo_and_wordmark.svg.png";
 import nextjsImg from "../imgs/nextjsImg.png";
 import bootstrapImg from "../imgs/Bootstrap_logo.svg.png";
 import tailwindImg from "../imgs/tailwindImg.png";
+import attestatoImg from "../imgs/Attestato_Davide.png";
+import imageDavide from "../imgs/imgdavide.png";
 import Image from "next/image";
 
 export default function Home() {
@@ -71,12 +73,8 @@ export default function Home() {
     return (
       <div className="mb-3">
         <div className="flex justify-between text-sm mb-1">
-          <span className="font-medium text-gray-700 dark:text-gray-200">
-            {label}
-          </span>
-          <span className="font-mono text-gray-500 dark:text-gray-300">
-            {percent}%
-          </span>
+          <span className="font-medium">{label}</span>
+          <span className="font-mono">{percent}%</span>
         </div>
         <div className="w-full h-3 bg-gray-200 dark:bg-gray-800 rounded">
           <motion.div
@@ -84,7 +82,7 @@ export default function Home() {
             whileInView={{ width: `${percent}%` }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className={`h-3 rounded ${color}`}
+            className={`h-3 rounded bg-opacity-90 dark:bg-opacity-100 ${color}`}
           />
         </div>
       </div>
@@ -113,19 +111,39 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="mx-auto max-w-2xl">
-          <p className="animate-gradient rounded-lg p-4 sm:p-6 shadow-lg text-center text-base sm:text-lg mb-8 sm:mb-12 text-white">
-            Ciao! Sono <strong className="text-white">Davide</strong>,
-            sviluppatore front-end appassionato di web e nuove tecnologie!
-          </p>
+        {/* Hero Section */}
+        <div className="mx-auto max-w-2xl mb-16 sm:mb-20">
+          <div className="animate-gradient dark:animate-gradient rounded-lg p-6 sm:p-8 shadow-lg text-center mb-6">
+            <p className="text-white text-lg sm:text-xl mb-4">
+              Ciao! Sono{" "}
+              <strong className="text-white">Davide Siracusano</strong>
+            </p>
+            <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6">
+              Front-End Developer
+            </h2>
+            <Image
+              src={imageDavide}
+              alt="Davide Siracusano"
+              className="w-32 h-32 rounded-full mx-auto mb-6"
+            />
+            <motion.a
+              href="/Siracusano Davide CV.pdf"
+              download="Siracusano Davide CV.pdf"
+              className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors duration-200"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Scarica CV
+            </motion.a>
+          </div>
         </div>
 
         {/* IN SINTESI */}
-        <section className="rounded-lg p-4 sm:p-6 shadow-lg text-center text-base sm:text-lg mb-8 sm:mb-12 bg-gradient-to-br from-indigo-600 to-purple-700 dark:from-indigo-900 dark:to-purple-950">
-          <h2 className="text-lg sm:text-xl font-semibold mb-2 flex items-center justify-center text-white">
+        <section className="section-sintesi rounded-lg p-4 sm:p-6 shadow-lg text-center text-base sm:text-lg mb-8 sm:mb-12">
+          <h2 className="text-lg sm:text-xl font-semibold mb-2 flex items-center justify-center text-gray-900 dark:text-white">
             <span className="mr-2">In sintesi:</span>
           </h2>
-          <p className="text-gray-100 leading-relaxed">
+          <p className="text-gray-900 dark:text-gray-100 leading-relaxed">
             Mi piace trasformare idee in esperienze digitali intuitive, curando
             ogni dettaglio del codice e del design. Credo nella collaborazione,
             nella chiarezza e nell&apos;accessibilità.
@@ -139,12 +157,10 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {/* Front-End */}
-            <div className="bg-gradient-to-br from-indigo-100 to-indigo-200 dark:from-indigo-900 dark:to-indigo-800 p-4 rounded-lg shadow-lg">
+            <div className="skill-card-frontend p-4 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <IconFE />
-                <span className="font-semibold text-indigo-700 dark:text-indigo-300">
-                  Front-End
-                </span>
+                <span className="font-semibold ">Front-End</span>
               </div>
               {frontEnd.map((skill) => (
                 <SkillBar
@@ -156,12 +172,10 @@ export default function Home() {
               ))}
             </div>
             {/* Back-End */}
-            <div className="bg-gradient-to-br from-sky-100 to-sky-200 dark:from-sky-900 dark:to-sky-800 p-4 rounded-lg shadow-lg">
+            <div className="skill-card-backend p-4 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <IconBE />
-                <span className="font-semibold text-sky-700 dark:text-sky-300">
-                  Back-End
-                </span>
+                <span className="font-semibold">Back-End</span>
               </div>
               {backEnd.map((skill) => (
                 <SkillBar
@@ -173,12 +187,10 @@ export default function Home() {
               ))}
             </div>
             {/* Tools & altri */}
-            <div className="bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-900 dark:to-emerald-800 p-4 rounded-lg shadow-lg">
+            <div className="skill-card-tools p-4 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <IconTools />
-                <span className="font-semibold text-emerald-700 dark:text-emerald-300">
-                  Tools & altri
-                </span>
+                <span className="font-semibold">Tools & altri</span>
               </div>
               {tools.map((skill) => (
                 <SkillBar
@@ -190,6 +202,41 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </section>
+
+        {/* Attestati Start2Impact */}
+        <section className="mb-16">
+          <motion.h2
+            className="text-xl sm:text-2xl font-bold text-center mb-8"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            Attestato Start2Impact
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="bg-white/10 backdrop-blur-sm dark:bg-gray-800/50 rounded-lg shadow-xl p-6 max-w-3xl mx-auto hover:shadow-2xl transition-shadow duration-300"
+          >
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="overflow-hidden rounded-lg"
+            >
+              <Image
+                src={attestatoImg}
+                alt="Attestato Start2Impact University"
+                width={1200}
+                height={900}
+                className="w-full h-auto rounded-lg hover:brightness-110 transition-all duration-300"
+                priority
+              />
+            </motion.div>
+          </motion.div>
         </section>
 
         {/*technologies*/}
@@ -216,6 +263,86 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
+
+        {/* Contatti */}
+        <section className="mt-16 mb-16">
+          <motion.h2
+            className="text-xl sm:text-2xl font-bold text-center mb-8"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            Contattami
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="max-w-lg mx-auto bg-white/10 backdrop-blur-sm dark:bg-gray-800/50 rounded-lg shadow-xl p-8 hover:shadow-2xl transition-all duration-300"
+          >
+            <form
+              action="https://formspree.io/f/myzbgoey"
+              method="POST"
+              className="space-y-4"
+            >
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                >
+                  Nome
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium dark:text-gray-300 mb-1"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium dark:text-gray-300 mb-1"
+                >
+                  Messaggio
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={4}
+                  required
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+              <motion.button
+                type="submit"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors duration-200"
+              >
+                Invia Messaggio
+              </motion.button>
+            </form>
+          </motion.div>
+        </section>
       </div>
     </motion.div>
   );

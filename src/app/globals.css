@@ -20,6 +20,55 @@ body.dark {
   color: white;
 }
 
+/* Gradienti per le sezioni */
+.section-sintesi {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+body.dark .section-sintesi {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 27, 75, 0.95),
+    rgba(67, 26, 107, 0.95)
+  );
+}
+
+.skill-card-frontend {
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+}
+
+body.dark .skill-card-frontend {
+  background: linear-gradient(
+    135deg,
+    rgba(49, 46, 129, 0.9),
+    rgba(67, 56, 202, 0.9)
+  );
+}
+
+.skill-card-backend {
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+}
+
+body.dark .skill-card-backend {
+  background: linear-gradient(
+    135deg,
+    rgba(12, 74, 110, 0.9),
+    rgba(14, 116, 144, 0.9)
+  );
+}
+
+.skill-card-tools {
+  background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+}
+
+body.dark .skill-card-tools {
+  background: linear-gradient(
+    135deg,
+    rgba(6, 78, 59, 0.9),
+    rgba(20, 83, 45, 0.9)
+  );
+}
+
 /* Animazione gradiente per navbar, footer e link progetti */
 .animate-gradient {
   animation: color-change-2x 2s infinite alternate linear;

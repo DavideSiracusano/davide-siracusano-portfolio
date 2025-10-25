@@ -6,58 +6,30 @@ import { FaSun, FaMoon } from "react-icons/fa";
 export default function DarkTheme() {
   const [isDark, setIsDark] = useState(false);
 
-  useEffect(() => {
-    // Controlla tema salvato
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      const dark = savedTheme === "dark";
-      setIsDark(dark);
-      // Mantieni altre classi: aggiungi/rimuovi solo `dark`/`light` su body per globals.css
-      if (dark) {
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
-      } else {
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-      }
-      // Tailwind usa la classe `dark` su html
-      if (dark) document.documentElement.classList.add("dark");
-      else document.documentElement.classList.remove("dark");
+  const applyTheme = (theme) => {
+    if (theme === "dark") {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
     } else {
-      // Preferenza sistema
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      setIsDark(prefersDark);
-      if (prefersDark) {
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
-        document.documentElement.classList.add("dark");
-      } else {
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-        document.documentElement.classList.remove("dark");
-      }
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
     }
+  };
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    const theme = savedTheme || (prefersDark ? "dark" : "light");
+    setIsDark(theme === "dark");
+    applyTheme(theme);
   }, []);
 
   const toggleTheme = () => {
     const newTheme = isDark ? "light" : "dark";
     setIsDark(!isDark);
-
-    // Applica su body (per CSS custom)
-    // Imposta body 'dark' o 'light' (senza sovrascrivere altre classi) e html.dark per Tailwind
-    if (newTheme === "dark") {
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
-      document.documentElement.classList.add("dark");
-    } else {
-      document.body.classList.add("light");
-      document.body.classList.remove("dark");
-      document.documentElement.classList.remove("dark");
-    }
-
-    // Salva preferenza
+    applyTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };
 
