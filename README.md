@@ -6,7 +6,7 @@
 
 Ciao! Sono Davide Siracusano, un Front-End Developer appassionato di sviluppo web e UI/UX design. Mi piace trasformare idee in esperienze digitali intuitive, curando ogni dettaglio del codice e del design. Il mio approccio si basa su tre pilastri fondamentali: collaborazione, chiarezza e accessibilità.
 
-## �️ Tecnologie Utilizzate
+## ⚛️ Tecnologie Utilizzate
 
 - **Next.js** - Framework React per applicazioni web moderne e performanti
 - **Tailwind CSS** - Per uno styling efficiente e un design system coerente
