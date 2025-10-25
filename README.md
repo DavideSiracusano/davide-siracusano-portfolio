@@ -1,29 +1,64 @@
-# Portfolio di Davide Siracusano
+# Portfolio di Davide Siracusano - Front-End Developer
 
-Benvenuto nel mio portfolio personale! 🌟  
-Questo progetto è un **portfolio web interattivo** realizzato con **Next.js**, **Tailwind CSS** e **Framer Motion**, pensato per mostrare i miei progetti, le competenze tecniche e il percorso formativo.
+![alt text](image.png)
+
+## 🎯 Chi Sono
+
+Ciao! Sono Davide Siracusano, un Front-End Developer appassionato di sviluppo web e UI/UX design. Mi piace trasformare idee in esperienze digitali intuitive, curando ogni dettaglio del codice e del design. Il mio approccio si basa su tre pilastri fondamentali: collaborazione, chiarezza e accessibilità.
+
+## �️ Tecnologie Utilizzate
+
+- **Next.js** - Framework React per applicazioni web moderne e performanti
+- **Tailwind CSS** - Per uno styling efficiente e un design system coerente
+- **Framer Motion** - Per animazioni fluide e interazioni dinamiche
+- **React Icons** - Per un'interfaccia ricca di icone intuitive
+- **TypeScript** - Per un codice robusto e ben tipizzato
+- **Git & GitHub** - Per il controllo versione e la collaborazione
 
 ---
 
-## 🖥️ Tecnologie utilizzate
+## 🎨 Caratteristiche Principali
 
-- **Next.js** – framework React moderno per applicazioni web.
-- **Tailwind CSS** – framework CSS utility-first per stili rapidi e responsivi.
-- **Framer Motion** – animazioni fluide e interattive.
-- **React Icons** – icone dei social e delle interfacce.
-- **Google Fonts** – tipografia personalizzata (Montserrat e Geist).
+- **Design Moderno**: Interfaccia ispirata a VS Code con tema chiaro/scuro
+- **Animazioni Fluide**: Transizioni ed effetti per una UX coinvolgente
+- **Responsive Design**: Ottimizzato per ogni dispositivo
+- **Sezioni Organizzate**:
+  - 🏠 **Home**: Presentazione e overview delle competenze
+  - 👨‍💻 **About**: Il mio percorso e la mia filosofia di sviluppo
+  - 🛠️ **Projects**: Showcase dei progetti realizzati
+  - 📊 **Skills**: Competenze tecniche con indicatori di livello
+  - 📬 **Contatti**: Form per collaborazioni e opportunità
 
----
+## 💻 Sviluppo Locale
 
-## 🚀 Funzionalità principali
+```bash
+# Clona il repository
+git clone https://github.com/DavideSiracusano/davide-siracusano-portfolio.git
 
-- **Tema chiaro/scuro** con toggle interattivo.
-- **Sezione Home** con presentazione personale e tecnologie.
-- **About** con soft skills, competenze tecniche e percorso formativo.
-- **Projects** con card animate per ogni progetto, link a GitHub e demo.
-- **Footer** con icone social animate e informazioni di contatto.
-- **Responsive design**: ottimizzato per desktop, tablet e mobile.
-- **Animazioni e hover effects** per rendere l’esperienza più dinamica.
+# Installa le dipendenze
+npm install
+
+# Avvia il server di sviluppo
+npm run dev
+```
+
+## 📱 Responsive Design
+
+Il portfolio è completamente responsive e ottimizzato per:
+
+- 📱 Mobile (< 640px)
+- 📱 Tablet (640px - 1024px)
+- 🖥️ Desktop (> 1024px)
+
+## 📫 Contatti
+
+- 📧 Email: [davidesiracusano1995@gmail.com]
+- 💼 LinkedIn: [Davide Siracusano]
+- 🐱 GitHub: [@DavideSiracusano]
+
+## 📄 Licenza
+
+MIT © 2023 Davide Siracusano
 
 ---
 
