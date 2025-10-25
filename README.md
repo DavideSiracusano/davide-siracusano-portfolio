@@ -28,6 +28,8 @@ Ciao! Sono Davide Siracusano, un Front-End Developer appassionato di sviluppo we
   - 🛠️ **Projects**: Showcase dei progetti realizzati
   - 📊 **Skills**: Competenze tecniche con indicatori di livello
   - 📬 **Contatti**: Form per collaborazioni e opportunità
+ 
+## Link: https://davide-siracusano-portfolio.vercel.app/
 
 ## 💻 Sviluppo Locale
 
