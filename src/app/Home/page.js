@@ -98,7 +98,7 @@ export default function Home() {
       className="min-h-screen pt-16 sm:pt-24 pb-12 sm:pb-16 px-3 sm:px-4 flex flex-col items-center justify-center"
     >
       <div className="max-w-4xl mx-auto w-full">
-        <div className="flex justify-center items-center mb-8 font-mono">
+        <div className="flex justify-center items-center my-5 font-mono">
           <h1
             className="flex flex-col sm:flex-row items-center justify-center text-center
                text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-full break-words"

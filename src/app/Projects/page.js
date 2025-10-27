@@ -10,8 +10,17 @@ import mockupPokedex from "../imgs/mockupPokedex.png";
 import mockupReactTodolist from "../imgs/mockupTodolist.png";
 import mockupJS from "../imgs/mockupJS.png";
 import start2impactLogo from "../imgs/start2impact-cover.jpg";
+import mockupCasper from "../imgs/casper.png";
 
 const progetti = [
+  {
+    nome: "Casper Prompt Generator",
+    descrizione:
+      "AI-Powered Prompt Builder per sviluppatori e creativi usando il metodo Casper.",
+    immagine: mockupCasper,
+    github: "https://github.com/DavideSiracusano/casper-prompt-generator",
+    demo: "https://casper-prompt-generator.vercel.app/",
+  },
   {
     nome: "Anime World",
     descrizione: "App per cercare e scoprire anime.",
