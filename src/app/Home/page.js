@@ -141,8 +141,8 @@ export default function Home() {
             </h4>
 
             <motion.a
-              href="/Siracusano Davide CV.pdf"
-              download="Siracusano Davide CV.pdf"
+              href="/Davide Siracusano CV.pdf"
+              download="Davide Siracusano CV.pdf"
               className="animate-gradient inline-flex items-center px-6 py-3  text-white font-medium rounded-lg transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
