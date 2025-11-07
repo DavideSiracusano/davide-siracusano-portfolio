@@ -1,6 +1,6 @@
 # Portfolio di Davide Siracusano - Front-End Developer
 
-![Uploading image.png…]()
+<img width="1890" height="821" alt="Screenshot 2025-11-07 220415" src="https://github.com/user-attachments/assets/2a8db2f6-5dd1-4934-8911-36517a415fb6" />
 
 
 ## 🎯 Chi Sono
