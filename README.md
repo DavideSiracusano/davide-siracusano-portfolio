@@ -1,6 +1,7 @@
 # Portfolio di Davide Siracusano - Front-End Developer
 
-![alt text](image.png)
+![Uploading image.png…]()
+
 
 ## 🎯 Chi Sono
 
