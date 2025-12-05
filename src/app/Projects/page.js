@@ -11,6 +11,7 @@ import mockupReactTodolist from "../imgs/mockupTodolist.png";
 import mockupJS from "../imgs/mockupJS.png";
 import start2impactLogo from "../imgs/start2impact-cover.jpg";
 import mockupCasper from "../imgs/casper.png";
+import mockupAIchat from "../imgs/mockup-aichat.png";
 
 const progetti = [
   {
@@ -79,6 +80,14 @@ const progetti = [
     immagine: start2impactLogo,
     github: "https://github.com/DavideSiracusano/fullstackproject_backend",
     demo: "https://github.com/DavideSiracusano/fullstackproject_backend",
+  },
+  {
+    nome: "AI Chat",
+    descrizione:
+      "Chatbot AI avanzato con funzionalità di conversazione naturale.",
+    immagine: mockupAIchat,
+    github: "https://github.com/DavideSiracusano/AiChat",
+    demo: "https://ai-chat-ochre-phi.vercel.app/",
   },
 ];
 
