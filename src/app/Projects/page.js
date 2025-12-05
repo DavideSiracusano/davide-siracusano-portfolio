@@ -15,6 +15,14 @@ import mockupAIchat from "../imgs/mockup-aichat.png";
 
 const progetti = [
   {
+    nome: "AI Chat",
+    descrizione:
+      "Chatbot AI avanzato con funzionalità di conversazione naturale.",
+    immagine: mockupAIchat,
+    github: "https://github.com/DavideSiracusano/AiChat",
+    demo: "https://ai-chat-ochre-phi.vercel.app/",
+  },
+  {
     nome: "Casper Prompt Generator",
     descrizione:
       "AI-Powered Prompt Builder per sviluppatori e creativi usando il metodo Casper.",
@@ -80,14 +88,6 @@ const progetti = [
     immagine: start2impactLogo,
     github: "https://github.com/DavideSiracusano/fullstackproject_backend",
     demo: "https://github.com/DavideSiracusano/fullstackproject_backend",
-  },
-  {
-    nome: "AI Chat",
-    descrizione:
-      "Chatbot AI avanzato con funzionalità di conversazione naturale.",
-    immagine: mockupAIchat,
-    github: "https://github.com/DavideSiracusano/AiChat",
-    demo: "https://ai-chat-ochre-phi.vercel.app/",
   },
 ];
 
