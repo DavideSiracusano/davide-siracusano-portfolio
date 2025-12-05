@@ -10,6 +10,7 @@ import nextjsImg from "../imgs/nextjsImg.png";
 import bootstrapImg from "../imgs/Bootstrap_logo.svg.png";
 import tailwindImg from "../imgs/tailwindImg.png";
 import attestatoImg from "../imgs/Attestato_Davide.png";
+import formatemp from "../imgs/formatemp.png";
 import imageDavide from "../imgs/imgdavide.png";
 import Image from "next/image";
 
@@ -227,26 +228,41 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Attestato Start2Impact
+            Attestati
           </motion.h2>
+
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="bg-white/10 backdrop-blur-sm dark:bg-gray-800/50 rounded-lg shadow-xl p-6 max-w-3xl mx-auto hover:shadow-2xl transition-shadow duration-300"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto"
           >
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
-              className="overflow-hidden rounded-lg"
+              className="bg-white/10 backdrop-blur-sm dark:bg-gray-800/50 rounded-lg shadow-xl p-4 hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
             >
               <Image
                 src={attestatoImg}
                 alt="Attestato Start2Impact University"
-                width={1200}
-                height={900}
-                className="w-full h-auto rounded-lg hover:brightness-110 transition-all duration-300"
+                width={400}
+                height={500}
+                className="rounded-lg hover:brightness-110 transition-all duration-300 w-full"
+                priority
+              />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white/10 backdrop-blur-sm dark:bg-gray-800/50 rounded-lg shadow-xl p-4 hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
+            >
+              <Image
+                src={formatemp}
+                alt="Attestato Formatemp"
+                width={400}
+                height={500}
+                className="rounded-lg hover:brightness-110 transition-all duration-300 w-full"
                 priority
               />
             </motion.div>

@@ -81,6 +81,67 @@ body.dark .hero-section {
   );
 }
 
+/* Sezione About Page */
+.about-section {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+body.dark .about-section {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 27, 75, 0.95),
+    rgba(67, 26, 107, 0.95)
+  );
+}
+
+.skill-card-about {
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+}
+
+body.dark .skill-card-about {
+  background: linear-gradient(
+    135deg,
+    rgba(49, 46, 129, 0.9),
+    rgba(67, 56, 202, 0.9)
+  );
+}
+
+.expertise-section {
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+body.dark .expertise-section {
+  background: linear-gradient(
+    135deg,
+    rgba(5, 46, 22, 0.95),
+    rgba(4, 47, 46, 0.95)
+  );
+}
+
+.timeline-card {
+  background: linear-gradient(135deg, #f3e8ff, #ddd6fe);
+}
+
+body.dark .timeline-card {
+  background: linear-gradient(
+    135deg,
+    rgba(88, 28, 135, 0.3),
+    rgba(99, 102, 241, 0.3)
+  );
+}
+
+.certifications-section {
+  background: linear-gradient(135deg, #7c3aed, #e879f9);
+}
+
+body.dark .certifications-section {
+  background: linear-gradient(
+    135deg,
+    rgba(67, 26, 107, 0.95),
+    rgba(168, 85, 247, 0.95)
+  );
+}
+
 /* Animazione gradiente per navbar, footer e link progetti */
 .animate-gradient {
   animation: color-change-2x 2s infinite alternate linear;
