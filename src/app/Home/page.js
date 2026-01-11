@@ -11,6 +11,7 @@ import bootstrapImg from "../imgs/Bootstrap_logo.svg.png";
 import tailwindImg from "../imgs/tailwindImg.png";
 import attestatoImg from "../imgs/Attestato_Davide.png";
 import formatemp from "../imgs/formatemp.png";
+import formatemp_backend from "../imgs/formatemp_backend.png";
 import imageDavide from "../imgs/imgdavide.png";
 import Image from "next/image";
 
@@ -260,6 +261,20 @@ export default function Home() {
               <Image
                 src={formatemp}
                 alt="Attestato Formatemp"
+                width={400}
+                height={500}
+                className="rounded-lg hover:brightness-110 transition-all duration-300 w-full"
+                priority
+              />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white/10 backdrop-blur-sm dark:bg-gray-800/50 rounded-lg shadow-xl p-4 hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
+            >
+              <Image
+                src={formatemp_backend}
+                alt="Attestato Formatemp Back end"
                 width={400}
                 height={500}
                 className="rounded-lg hover:brightness-110 transition-all duration-300 w-full"
