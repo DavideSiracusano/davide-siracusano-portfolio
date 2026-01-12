@@ -2,7 +2,6 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import DarkTheme from "@/components/DarkTheme";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -12,7 +11,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Davide Siracusano Portfolio",
+  title: {
+    default: "Davide Siracusano | Front-End Developer",
+    template: "%s | Davide Siracusano",
+  },
   description: "Portfolio di Davide, sviluppatore front-end",
 };
 

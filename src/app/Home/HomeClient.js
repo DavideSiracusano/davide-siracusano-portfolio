@@ -26,7 +26,6 @@ export default function Home() {
     { src: tailwindImg, alt: "Tailwind" },
   ];
 
-  // Skill data
   const frontEnd = [
     { name: "React", pct: 85 },
     { name: "TypeScript", pct: 80 },
@@ -36,12 +35,14 @@ export default function Home() {
     { name: "TailwindCSS", pct: 85 },
     { name: "Next.js", pct: 75 },
   ];
+
   const backEnd = [
     { name: "Node.js", pct: 70 },
     { name: "Express", pct: 65 },
     { name: "PHP", pct: 75 },
     { name: "MySQL", pct: 70 },
   ];
+
   const tools = [
     { name: "Git", pct: 85 },
     { name: "GitHub", pct: 90 },
@@ -50,27 +51,24 @@ export default function Home() {
     { name: "Figma", pct: 70 },
   ];
 
-  // Front-End → atomo
   const IconFE = () => (
     <div className="transition-transform duration-300 hover:scale-110 hover:rotate-6">
       <FaAtom className="text-indigo-500 w-7 h-7 mr-2" />
     </div>
   );
 
-  // Back-End → database
   const IconBE = () => (
     <div className="transition-transform duration-300 hover:scale-110 hover:-rotate-6">
       <FaDatabase className="text-sky-500 w-7 h-7 mr-2" />
     </div>
   );
 
-  // Tools & altri → stella
   const IconTools = () => (
     <div className="transition-transform duration-300 hover:scale-110 hover:rotate-3">
       <FaStar className="text-emerald-500 w-7 h-7 mr-2" />
     </div>
   );
-  // Animated bar
+
   function SkillBar({ label, percent, color }) {
     return (
       <div className="mb-3">
@@ -101,10 +99,7 @@ export default function Home() {
     >
       <div className="max-w-4xl mx-auto w-full">
         <div className="flex justify-center items-center my-5 font-mono">
-          <h1
-            className="flex flex-col sm:flex-row items-center justify-center text-center
-               text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-full break-words"
-          >
+          <h1 className="flex flex-col sm:flex-row items-center justify-center text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-full break-words">
             <span className="html-tag shrink-0 mb-1 sm:mb-0">&lt;h1&gt;</span>
             <span className="code-content code-animation mx-0 sm:mx-4">
               Benvenuto!👋🏻
@@ -113,7 +108,7 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* Hero Section */}
+        {/* Hero */}
         <div className="mx-auto max-w-2xl mb-16 sm:mb-20">
           <div className="hero-section rounded-lg p-7 sm:p-8 shadow-lg text-center mb-6">
             <div className="flex">
@@ -125,27 +120,21 @@ export default function Home() {
             <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6">
               Front-End Developer
             </h2>
+
             <Image
               src={imageDavide}
               alt="Davide Siracusano"
-              className="w-32 h-34 rounded-full mx-auto mb-6 "
+              className="w-32 h-34 rounded-full mx-auto mb-6"
             />
 
             <h4 className="text-white text-lg sm:text-xl mb-4">
-              {`Sono un appassionato di progettazione web e
-              sviluppo di interfacce moderne e accessibili. Dopo un percorso
-              formativo su Start2Impact, ho maturato esperienza pratica nella
-              realizzazione di applicazioni complete con React.js, Next.js TypeScript e
-              JavaScript, curando ogni dettaglio di design e usabilità. Mi piace
-              creare soluzioni digitali che uniscono estetica, funzionalità e
-              semplicità, con l’obiettivo di offrire esperienze fluide e
-              piacevoli a ogni utente.`}
+              {`Sono un appassionato di progettazione web e sviluppo di interfacce moderne e accessibili...`}
             </h4>
 
             <motion.a
               href="/Davide Siracusano CV.pdf"
               download="Davide Siracusano CV.pdf"
-              className="animate-gradient inline-flex items-center px-6 py-3  text-white font-medium rounded-lg transition-colors duration-200"
+              className="animate-gradient inline-flex items-center px-6 py-3 text-white font-medium rounded-lg transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
