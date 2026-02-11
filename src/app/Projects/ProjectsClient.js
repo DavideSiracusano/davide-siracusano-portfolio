@@ -18,6 +18,7 @@ const progetti = [
     nome: "AI Chat",
     descrizione:
       "Chatbot AI avanzato con funzionalità di conversazione naturale.",
+    Tecnologie: "React, Next.js Tailwind CSS, OpenAI API",
     immagine: mockupAIchat,
     github: "https://github.com/DavideSiracusano/AiChat",
     demo: "https://ai-chat-ochre-phi.vercel.app/",
@@ -25,14 +26,16 @@ const progetti = [
   {
     nome: "Casper Prompt Generator",
     descrizione:
-      "AI-Powered Prompt Builder per sviluppatori e creativi usando il metodo Casper.",
+      "AI-Powered Prompt Builder per sviluppatori e creativi usando il metodo Casper",
+    Tecnologie: "React, Next.js, Tailwind CSS, OpenAI API",
     immagine: mockupCasper,
     github: "https://github.com/DavideSiracusano/casper-prompt-generator",
     demo: "https://casper-prompt-generator.vercel.app/",
   },
   {
     nome: "Anime World",
-    descrizione: "App per cercare e scoprire anime.",
+    descrizione: "App full stack per cercare e scoprire anime.",
+    Tecnologie: "React, Next.js, Node.js, PostgreSQL, Prisma",
     immagine: mockupAnime,
     github: "https://github.com/DavideSiracusano/Anime-World",
     demo: "https://anime-world-jade.vercel.app/",
@@ -40,6 +43,7 @@ const progetti = [
   {
     nome: "Yu-Gi-Oh Database",
     descrizione: "Database di carte Yu-Gi-Oh con filtri e ricerca.",
+    Tecnologie: "React, Tailwind CSS, API Yu-Gi-Oh",
     immagine: mockupYugi,
     github: "https://github.com/DavideSiracusano/yu-gi-oh-database",
     demo: "https://yu-gi-oh-database.vercel.app/",
@@ -47,6 +51,7 @@ const progetti = [
   {
     nome: "Movies Selection",
     descrizione: "Selezione e scoperta di film con API.",
+    Tecnologie: "React, Tailwind CSS, API Movies",
     immagine: mockupMovies,
     github: "https://github.com/DavideSiracusano/Movies-Selection",
     demo: "https://movies-selection.vercel.app/",
@@ -54,6 +59,7 @@ const progetti = [
   {
     nome: "React Pokedex",
     descrizione: "Pokedex interattivo realizzato con React.",
+    Tecnologie: "React",
     immagine: mockupPokedex,
     github: "https://github.com/DavideSiracusano/react-pokedex",
     demo: "https://react-sirdavi-pokedex.netlify.app/",
@@ -61,6 +67,7 @@ const progetti = [
   {
     nome: "React To-do List",
     descrizione: "To-do List realizzato con React.",
+    Tecnologie: "React",
     immagine: mockupReactTodolist,
     github:
       "https://github.com/DavideSiracusano/react-todo-list?tab=readme-ov-file",
@@ -69,6 +76,7 @@ const progetti = [
   {
     nome: "Javascript Advanced",
     descrizione: "Progetto Javascript Advanced del master Start2Impact",
+    Tecnologie: "JavaScript",
     immagine: mockupJS,
     github:
       "https://github.com/DavideSiracusano/JavaScript-Advanced---Information?tab=readme-ov-file",
@@ -77,6 +85,7 @@ const progetti = [
   {
     nome: "Fullstack Project Frontend",
     descrizione: "Frontend Angular per il progetto fullstack di Start2Impact",
+    Tecnologie: "Angular, TypeScript, Bootstrap",
     immagine: start2impactLogo,
     github: "https://github.com/DavideSiracusano/fullstackproject_frontend",
     demo: "https://fullstack-7899a.web.app/home",
@@ -85,6 +94,7 @@ const progetti = [
     nome: "Fullstack Project Backend",
     descrizione:
       "Backend Node.js/Express per il progetto fullstack di Start2Impact",
+    Tecnologie: "Node.js, Express, MongoDB",
     immagine: start2impactLogo,
     github: "https://github.com/DavideSiracusano/fullstackproject_backend",
     demo: "https://github.com/DavideSiracusano/fullstackproject_backend",
@@ -128,6 +138,11 @@ export default function ProjectsClient() {
                 </h2>
                 <p className="text-center text-sm text-gray-700 dark:text-gray-300 mb-6 flex-1">
                   {proj.descrizione}
+                </p>
+
+                {/* Tecnologie utilizzate */}
+                <p className="text-sm text-gray-500 dark:text-gray-400 text-center mb-3">
+                  Tecnologie: {proj.Tecnologie}
                 </p>
 
                 {/* Links GitHub e Demo */}

@@ -24,16 +24,16 @@ export default function AboutClient() {
 
   const educationTimeline = [
     {
-      year: "2014-2018",
-      title: "Laurea Triennale",
-      subtitle: "Scienze della Comunicazione",
-      description: "Fondamenti di comunicazione e media",
+      year: "2025",
+      title: "Corso Formatemp",
+      subtitle: "Frontend e Backend",
+      description: "320 ore - Approfondimento su tecnologie moderne",
     },
     {
-      year: "2021-2022",
-      title: "Laurea Magistrale",
-      subtitle: "Lingue e Letterature Straniere",
-      description: "Specializzazione in lingue straniere",
+      year: "2024-2025",
+      title: "Sviluppo Autodidatta",
+      subtitle: "Progetti Personali e Collaborativi",
+      description: "Continuamente aggiornato e lavorando su nuovi progetti",
     },
     {
       year: "2023-2024",
@@ -43,16 +43,16 @@ export default function AboutClient() {
         "850 ore - HTML, CSS, JS, React, Next.js, Node.js, Express, MongoDB, Git/GitHub",
     },
     {
-      year: "2024-2025",
-      title: "Sviluppo Autodidatta",
-      subtitle: "Progetti Personali e Collaborativi",
-      description: "Continuamente aggiornato e lavorando su nuovi progetti",
+      year: "2021-2022",
+      title: "Laurea Magistrale",
+      subtitle: "Lingue e Letterature Straniere",
+      description: "Specializzazione in lingue straniere",
     },
     {
-      year: "2025",
-      title: "Corso Formatemp",
-      subtitle: "Frontend e Backend",
-      description: "320 ore - Approfondimento su tecnologie moderne",
+      year: "2014-2018",
+      title: "Laurea Triennale",
+      subtitle: "Scienze della Comunicazione",
+      description: "Fondamenti di comunicazione e media",
     },
   ];
 
@@ -150,10 +150,13 @@ export default function AboutClient() {
             💻 La Mia Expertise Tecnica
           </h2>
           <p className="text-lg text-white mb-4 leading-relaxed">
-            Sono uno sviluppatore front-end specializzato in tecnologie web
+            Sono uno sviluppatore full-stack specializzato in tecnologie web
             moderne come{" "}
-            <strong>HTML5, CSS3, JavaScript, React, Next.js</strong> e molto
-            altro.
+            <strong>
+              HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Node.js,
+              PostgreSQL, MongoDB e Prisma
+            </strong>{" "}
+            e molto altro.
           </p>
           <p className="text-lg text-white leading-relaxed">
             Amo continuamente imparare e restare aggiornato sulle ultime

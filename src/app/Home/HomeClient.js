@@ -8,7 +8,11 @@ import cssImg from "../imgs/CSS3_logo_and_wordmark.svg.png";
 import htmlImg from "../imgs/HTML5_logo_and_wordmark.svg.png";
 import nextjsImg from "../imgs/nextjsImg.png";
 import bootstrapImg from "../imgs/Bootstrap_logo.svg.png";
-import tailwindImg from "../imgs/tailwindImg.png";
+import tailwindImg from "../imgs/tailwind.png";
+import nodejsImg from "../imgs/nodejs.png";
+import mysqlImg from "../imgs/mysql.png";
+import postgreImg from "../imgs/postgre.png";
+import prismaImg from "../imgs/prisma.png";
 import attestatoImg from "../imgs/Attestato_Davide.png";
 import formatemp from "../imgs/formatemp.png";
 import formatemp_backend from "../imgs/formatemp_backend.png";
@@ -24,6 +28,10 @@ export default function Home() {
     { src: bootstrapImg, alt: "Bootstrap" },
     { src: nextjsImg, alt: "Next.js" },
     { src: tailwindImg, alt: "Tailwind" },
+    { src: nodejsImg, alt: "Node.js" },
+    { src: mysqlImg, alt: "MySQL" },
+    { src: postgreImg, alt: "PostgreSQL" },
+    { src: prismaImg, alt: "Prisma" },
   ];
 
   const frontEnd = [
@@ -37,10 +45,12 @@ export default function Home() {
   ];
 
   const backEnd = [
-    { name: "Node.js", pct: 70 },
-    { name: "Express", pct: 65 },
-    { name: "PHP", pct: 75 },
-    { name: "MySQL", pct: 70 },
+    { name: "Node.js", pct: 75 },
+    { name: "Express", pct: 70 },
+    { name: "PHP", pct: 60 },
+    { name: "MySQL", pct: 75 },
+    { name: "PostgreSQL", pct: 75 },
+    { name: "Prisma", pct: 70 },
   ];
 
   const tools = [
@@ -118,7 +128,7 @@ export default function Home() {
               </p>
             </div>
             <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6">
-              Front-End Developer
+              Full-Stack Developer con specializzazione in Front-End
             </h2>
 
             <Image
@@ -283,16 +293,15 @@ export default function Home() {
               key={tech.alt}
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
               whileHover={{ scale: 1.2, rotate: 5 }}
               className="transition-transform duration-300"
             >
               <Image
                 src={tech.src}
                 alt={tech.alt}
-                width={50}
-                height={50}
-                className="w-12 h-12 object-contain hover:drop-shadow-lg"
+                width={80}
+                height={70}
+                className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
               />
             </motion.div>
           ))}
