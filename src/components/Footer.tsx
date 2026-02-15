@@ -2,9 +2,17 @@
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import { IconType } from "react-icons";
+
+interface SocialLink {
+  href: string;
+  icon: IconType;
+  color: string;
+  label: string;
+}
 
 export default function Footer() {
-  const socialLinks = [
+  const socialLinks: SocialLink[] = [
     {
       href: "https://www.facebook.com/davide.siracusano/",
       icon: FaFacebook,

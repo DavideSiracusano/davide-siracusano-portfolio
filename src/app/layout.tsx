@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import { ReactNode } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -18,7 +19,11 @@ export const metadata = {
   description: "Portfolio di Davide, sviluppatore front-end",
 };
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="it">
       <body

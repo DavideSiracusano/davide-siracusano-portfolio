@@ -13,7 +13,16 @@ import start2impactLogo from "../imgs/start2impact-cover.jpg";
 import mockupCasper from "../imgs/casper.png";
 import mockupAIchat from "../imgs/mockup-aichat.png";
 
-const progetti = [
+interface Project {
+  nome: string;
+  descrizione: string;
+  Tecnologie: string;
+  immagine: string;
+  github: string;
+  demo: string;
+}
+
+const progetti: Project[] = [
   {
     nome: "AI Chat",
     descrizione:

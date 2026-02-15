@@ -10,10 +10,24 @@ import {
   FaHeartbeat,
   FaClock,
 } from "react-icons/fa";
+import { IconType } from "react-icons";
 import start2impactImg from "../imgs/cropped-Logo_University-09.webp";
+import { JSX } from "react";
+
+interface SoftSkill {
+  icon: IconType;
+  text: string;
+}
+
+interface EducationItem {
+  year: string;
+  title: string;
+  subtitle: string;
+  description: string;
+}
 
 export default function AboutClient() {
-  const softSkills = [
+  const softSkills: SoftSkill[] = [
     { icon: FaHeartbeat, text: "Comunicazione chiara" },
     { icon: FaLightbulb, text: "Problem solving" },
     { icon: FaUsers, text: "Teamwork" },
@@ -22,7 +36,7 @@ export default function AboutClient() {
     { icon: FaGraduationCap, text: "Apprendimento continuo" },
   ];
 
-  const educationTimeline = [
+  const educationTimeline: EducationItem[] = [
     {
       year: "2025",
       title: "Corso Formatemp",

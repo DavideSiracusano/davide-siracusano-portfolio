@@ -5,11 +5,16 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import DarkTheme from "./DarkTheme";
 
+interface NavLink {
+  name: string;
+  href: string;
+}
+
 export default function Header() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   const pathname = usePathname();
 
-  const links = [
+  const links: NavLink[] = [
     { name: "Home", href: "/" },
     { name: "About", href: "/About" },
     { name: "Projects", href: "/Projects" },
@@ -20,7 +25,7 @@ export default function Header() {
     setOpen(false);
   }, [pathname]);
 
-  const isActive = (path) => pathname === path;
+  const isActive = (path: string): boolean => pathname === path;
 
   return (
     <nav className="animate-gradient p-4 shadow-md fixed w-full top-0 z-50">

@@ -19,8 +19,24 @@ import formatemp_backend from "../imgs/formatemp_backend.png";
 import imageDavide from "../imgs/imgdavide.png";
 import Image from "next/image";
 
+interface Technology {
+  src: string;
+  alt: string;
+}
+
+interface Skill {
+  name: string;
+  pct: number;
+}
+
+interface SkillBarProps {
+  label: string;
+  percent: number;
+  color: string;
+}
+
 export default function Home() {
-  const technologies = [
+  const technologies: Technology[] = [
     { src: reactImg, alt: "React" },
     { src: javascriptImg, alt: "JavaScript" },
     { src: cssImg, alt: "CSS3" },
@@ -34,7 +50,7 @@ export default function Home() {
     { src: prismaImg, alt: "Prisma" },
   ];
 
-  const frontEnd = [
+  const frontEnd: Skill[] = [
     { name: "React", pct: 85 },
     { name: "TypeScript", pct: 80 },
     { name: "JavaScript", pct: 90 },
@@ -44,7 +60,7 @@ export default function Home() {
     { name: "Next.js", pct: 75 },
   ];
 
-  const backEnd = [
+  const backEnd: Skill[] = [
     { name: "Node.js", pct: 75 },
     { name: "Express", pct: 70 },
     { name: "PHP", pct: 60 },
@@ -53,7 +69,7 @@ export default function Home() {
     { name: "Prisma", pct: 70 },
   ];
 
-  const tools = [
+  const tools: Skill[] = [
     { name: "Git", pct: 85 },
     { name: "GitHub", pct: 90 },
     { name: "Vite", pct: 80 },
@@ -79,7 +95,7 @@ export default function Home() {
     </div>
   );
 
-  function SkillBar({ label, percent, color }) {
+  function SkillBar({ label, percent, color }: SkillBarProps) {
     return (
       <div className="mb-3">
         <div className="flex justify-between text-sm mb-1">

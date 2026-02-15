@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function DarkTheme() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState<boolean>(false);
 
-  const applyTheme = (theme) => {
+  const applyTheme = (theme: string) => {
     if (theme === "dark") {
       document.body.classList.remove("light");
       document.body.classList.add("dark");
@@ -19,7 +19,7 @@ export default function DarkTheme() {
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
+      "(prefers-color-scheme: dark)",
     ).matches;
     const theme = savedTheme || (prefersDark ? "dark" : "light");
     setIsDark(theme === "dark");
