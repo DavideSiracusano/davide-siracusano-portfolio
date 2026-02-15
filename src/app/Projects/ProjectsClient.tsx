@@ -48,7 +48,7 @@ const progetti: Project[] = [
     Tecnologie: "React, Next.js, Node.js, PostgreSQL, Prisma",
     immagine: mockupAnime,
     github: "https://github.com/DavideSiracusano/Anime-World",
-    demo: "https://anime-world-psi-bice.vercel.app/",
+    demo: "https://anime-world-ruby.vercel.app/",
   },
   {
     nome: "Yu-Gi-Oh Database",
