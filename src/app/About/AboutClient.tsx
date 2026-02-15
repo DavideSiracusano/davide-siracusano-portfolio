@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import React from "react";
 import {
   FaLightbulb,
   FaUsers,
@@ -10,12 +11,10 @@ import {
   FaHeartbeat,
   FaClock,
 } from "react-icons/fa";
-import { IconType } from "react-icons";
 import start2impactImg from "../imgs/cropped-Logo_University-09.webp";
-import { JSX } from "react";
 
 interface SoftSkill {
-  icon: IconType;
+  icon: React.ElementType<any>;
   text: string;
 }
 

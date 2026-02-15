@@ -1,12 +1,12 @@
 "use client";
 
+import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Link from "next/link";
-import { IconType } from "react-icons";
 
 interface SocialLink {
   href: string;
-  icon: IconType;
+  icon: React.ElementType<any>;
   color: string;
   label: string;
 }
