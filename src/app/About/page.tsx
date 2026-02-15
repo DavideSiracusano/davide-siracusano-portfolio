@@ -1,11 +1,11 @@
 export const metadata = {
   title: "Chi Sono",
   description:
-    "Informazioni su Davide Siracusano, front-end developer specializzato in React e Next.js.",
+    "Informazioni su Davide Siracusano, full-stack developer specializzato in React e Next.js.",
   openGraph: {
     title: "Chi Sono - Davide Siracusano",
     description:
-      "Informazioni su Davide Siracusano, front-end developer specializzato in React e Next.js.",
+      "Informazioni su Davide Siracusano, full-stack developer specializzato in React e Next.js.",
     url: "https://davide-siracusano-portfolio.vercel.app/about",
     siteName: "Davide Siracusano Portfolio",
     images: [
