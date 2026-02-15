@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 
 import mockupAnime from "../imgs/mockupAnime.png";
 import mockupYugi from "../imgs/mockupYugi.png";
@@ -17,7 +18,7 @@ interface Project {
   nome: string;
   descrizione: string;
   Tecnologie: string;
-  immagine: string;
+  immagine: string | StaticImageData;
   github: string;
   demo: string;
 }

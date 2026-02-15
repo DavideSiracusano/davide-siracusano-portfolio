@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FaAtom, FaDatabase, FaStar } from "react-icons/fa";
+import type { StaticImageData } from "next/image";
 import reactImg from "../imgs/image.png";
 import javascriptImg from "../imgs/javascript-logo-javascript-icon-transparent-free-png.webp";
 import cssImg from "../imgs/CSS3_logo_and_wordmark.svg.png";
@@ -20,7 +21,7 @@ import imageDavide from "../imgs/imgdavide.png";
 import Image from "next/image";
 
 interface Technology {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
 }
 
@@ -304,7 +305,7 @@ export default function Home() {
           Tecnologie con cui lavoro:
         </h4>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-          {technologies.map((tech, index) => (
+          {technologies.map((tech) => (
             <motion.div
               key={tech.alt}
               initial={{ opacity: 0, scale: 0.5 }}
