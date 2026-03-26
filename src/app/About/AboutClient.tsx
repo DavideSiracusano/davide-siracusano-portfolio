@@ -37,6 +37,13 @@ export default function AboutClient() {
 
   const educationTimeline: EducationItem[] = [
     {
+      year: "2026",
+      title: "Academy Java Enterprise",
+      subtitle: "Java e Spring Boot",
+      description:
+        "240 ore - Approfondimento su Java con Spring Boot e Database relazionali",
+    },
+    {
       year: "2025",
       title: "Corso Formatemp",
       subtitle: "Frontend e Backend",
@@ -167,7 +174,7 @@ export default function AboutClient() {
             moderne come{" "}
             <strong>
               HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Node.js,
-              PostgreSQL, MongoDB e Prisma
+              Java, Spring Boot PostgreSQL, MySQL e Prisma
             </strong>{" "}
             e molto altro.
           </p>

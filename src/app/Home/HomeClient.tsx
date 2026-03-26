@@ -64,7 +64,8 @@ export default function Home() {
   const backEnd: Skill[] = [
     { name: "Node.js", pct: 75 },
     { name: "Express", pct: 70 },
-    { name: "PHP", pct: 60 },
+    { name: "Java", pct: 80 },
+    { name: "Spring Boot", pct: 70 },
     { name: "MySQL", pct: 75 },
     { name: "PostgreSQL", pct: 75 },
     { name: "Prisma", pct: 70 },
@@ -76,6 +77,7 @@ export default function Home() {
     { name: "Vite", pct: 80 },
     { name: "REST API", pct: 80 },
     { name: "Figma", pct: 70 },
+    { name: "Docker", pct: 70 },
   ];
 
   const IconFE = () => (
@@ -145,7 +147,7 @@ export default function Home() {
               </p>
             </div>
             <h2 className="text-white text-2xl sm:text-3xl font-bold mb-6">
-              Full-Stack Developer con specializzazione in Front-End
+              Full-Stack Developer
             </h2>
 
             <Image
@@ -155,7 +157,7 @@ export default function Home() {
             />
 
             <h4 className="text-white text-lg sm:text-xl mb-4">
-              {`Sono un appassionato di progettazione web e sviluppo di interfacce moderne e accessibili...`}
+              {`Sono un appassionato di progettazione web e sviluppo di interfacce moderne e accessibili`}
             </h4>
 
             <motion.a
